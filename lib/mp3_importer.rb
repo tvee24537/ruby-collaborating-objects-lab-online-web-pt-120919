@@ -10,7 +10,7 @@ class MP3Importer
         files ||= Dir["#{@path}/*"].collect {|song| song.gsub("#{@path}/", "")}
     end
 
-    def import
+    def import      #send us to the Song class, specifically Song.new_by_filename and handle the creation of Song instances and their associated Artist instances.
        files.each {|song| Song.new_by_filename(song)}
     end
 
