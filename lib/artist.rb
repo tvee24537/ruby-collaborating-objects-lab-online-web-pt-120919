@@ -18,7 +18,7 @@ class Artist
     @songs << song
   end
 
-  def songs
+  def songs   #get all existing Song instances from Song and select only the ones that are associated with this Artist instance.
     Song.all.each do |song|
       if song.artist == self
         @songs << song
