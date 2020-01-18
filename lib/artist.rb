@@ -32,7 +32,7 @@
   end
 
   def print_songs
-    self.songs.each { |song| song.name }
+    songs.each { |song| puts song.name }
   end
 
   def save
