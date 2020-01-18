@@ -31,7 +31,7 @@ class Artist
     self.all.detect {|artist| artist.name == name} || self.new(name)
   end
 
-  def print_songs  #
+  def print_songs  #outputs the names of all songs associated with this Artist instance.
     @songs.each do |song|
       puts song.name 
     end    
