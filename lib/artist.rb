@@ -14,7 +14,7 @@ class Artist
     @@all
   end
 
-  def add_song(song)
+  def add_song(song)  
     @songs << song
   end
 
@@ -31,7 +31,7 @@ class Artist
     self.all.detect {|artist| artist.name == name} || self.new(name)
   end
 
-  def print_songs
+  def print_songs  #
     @songs.each do |song|
       puts song.name 
     end    
