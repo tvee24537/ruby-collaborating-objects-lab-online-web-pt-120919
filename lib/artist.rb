@@ -27,7 +27,7 @@ class Artist
     @songs
   end
 
-  def self.find_or_create_by_name(name)
+  def self.find_or_create_by_name(name)   #Find the artist instance that has that name or create one if it doesn't exist.
     self.all.detect {|artist| artist.name == name} || self.new(name)
   end
 
